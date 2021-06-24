@@ -9,7 +9,7 @@ import Admin from './screens/admin'
 import AdminPost from './screens/admin/Post'
 import Blog from './screens/blog'
 import BlogPost from './screens/blog/Post'
-
+import {ReactQueryDevtools} from 'react-query-devtools'
 function SafeHydrate({ children }) {
   return (
     <div suppressHydrationWarning>
@@ -41,6 +41,7 @@ export default function App() {
             </Routes>
           </Main>
         </Wrapper>
+        <ReactQueryDevtools />
       </BrowserRouter>
     </SafeHydrate>
   )
